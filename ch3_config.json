@@ -1,0 +1,33 @@
+{
+	"name": "LOAD",
+	"description": "Phase Imbalance",
+	"recordAlarms": false,
+	"_config": {
+		"bus_type": "VIRTUAL",
+		"rra": { "live": "RRA:LAST:0.5:1:1800" }
+	},
+	"sensors": [
+		{
+			"id": "s0",			
+			"name": " ",
+			"nominal": 0,
+			"thresholds": [
+				{
+					"classification": "ALARM",
+					"value": 4,
+					"direction": "MAX"
+				}
+			],
+			"_config": {
+				"range": [ 0, 100 ],
+				"type": "PIB",
+				"units": "%",
+				"sources": [ "ch0.s0", "ch1.s0", "ch2.s0" ]
+			},
+			"display_range": [
+				0,
+				5
+			]
+		}
+	]
+}

@@ -1,0 +1,56 @@
+{
+	"description": "208 V L-L (\u0394) Phase B",
+	"name": "LINE",
+	"recordAlarms": false,
+	"_config": {
+		"device_index": 3,
+		"bus_index": 0,
+		"bus_type": "SPI",
+		"device_type": "STPM3X",
+		"rra": { "live": "RRA:LAST:0.5:1:1800" }
+	},
+	"sensors": [
+		{
+			"thresholds": [
+				{
+					"classification": "ALARM",
+					"value": 239.2,
+					"direction": "MAX"
+				},
+				{
+					"classification": "WARNING",
+					"value": 228.0,
+					"direction": "MAX"
+				},
+				{
+					"classification": "WARNING",
+					"value": 176.8,
+					"direction": "MIN"
+				},
+				{
+					"classification": "ALARM",
+					"value": 166.4,
+					"direction": "MIN"
+				}
+			],
+			"name": "Vbc",
+			"display_range": [
+				100,
+				300
+			],
+			"_config": {
+				"range": [
+					0,
+					300
+				],
+				"register": "V2RMS",
+				"threshold": 10,
+				"type": "VAC",
+				"units": "Vrms",
+				"scale": 0.059105777
+			},
+			"id": "s0",
+			"nominal": 208
+		}
+	]
+}
