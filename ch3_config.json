@@ -1,5 +1,5 @@
 {
-	"name": "LOAD",
+	"name": "LINE",
 	"description": "Phase Imbalance",
 	"recordAlarms": false,
 	"_config": {
@@ -14,7 +14,7 @@
 			"thresholds": [
 				{
 					"classification": "ALARM",
-					"value": 4,
+					"value": 3,
 					"direction": "MAX"
 				}
 			],

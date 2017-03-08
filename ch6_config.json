@@ -1,12 +1,12 @@
 {
-	"description": "208 V L-L (\u0394) Phase C",
-	"name": "LINE",
+	"description": "277 V L-N (Y) Phase C",
+	"name": "LOAD",
 	"recordAlarms": false,
 	"_config": {
 		"device_index": 4,
 		"bus_index": 0,
-		"bus_type": "SPI",
 		"device_type": "STPM3X",
+		"bus_type": "SPI",
 		"rra": { "live": "RRA:LAST:0.5:1:1800" }
 	},
 	"sensors": [
@@ -14,34 +14,30 @@
 			"thresholds": [
 				{
 					"classification": "ALARM",
-					"value": 239.2,
+					"value": 318.55,
 					"direction": "MAX"
 				},
 				{
 					"classification": "WARNING",
-					"value": 228.0,
+					"value": 304.7,
 					"direction": "MAX"
 				},
 				{
 					"classification": "WARNING",
-					"value": 176.8,
+					"value": 235.45,
 					"direction": "MIN"
 				},
 				{
 					"classification": "ALARM",
-					"value": 166.4,
+					"value": 221.6,
 					"direction": "MIN"
 				}
 			],
-			"name": "Vac",
-			"display_range": [
-				100,
-				300
-			],
+			"name": "Vc",
 			"_config": {
 				"range": [
 					0,
-					300
+					400
 				],
 				"register": "V1RMS",
 				"threshold": 10,
@@ -49,8 +45,44 @@
 				"units": "Vrms",
 				"scale": 0.059105777
 			},
-			"id": "s0",
-			"nominal": 208
+			"nominal": 277,
+			"display_range": [
+				136,
+				400
+			],
+			"id": "s0"
+		},
+		{
+			"thresholds": [
+				{
+					"value": 180,
+					"classification": "ALARM",
+					"direction": "MAX"
+				},
+				{
+					"value": 135,
+					"classification": "WARNING",
+					"direction": "MAX"
+				}
+			],
+			"name": "Ic",
+			"_config": {
+				"range": [
+					0,
+					300
+				],
+				"register": "C1RMS",
+				"threshold": 7,
+				"type": "CAC",
+				"units": "Arms",
+				"scale": 0.02037096
+			},
+			"nominal": 90,
+			"display_range": [
+				0,
+				300
+			],
+			"id": "s1"
 		}
 	]
 }

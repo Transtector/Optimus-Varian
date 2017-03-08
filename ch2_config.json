@@ -1,6 +1,6 @@
 {
-	"description": "277 V L-N (Y) Phase C",
-	"name": "LOAD",
+	"description": "208 V L-L (\u0394) Phase C",
+	"name": "LINE",
 	"recordAlarms": false,
 	"_config": {
 		"device_index": 2,
@@ -14,31 +14,30 @@
 			"thresholds": [
 				{
 					"classification": "ALARM",
-					"value": 318.55,
+					"value": 239.2,
 					"direction": "MAX"
 				},
 				{
 					"classification": "WARNING",
-					"value": 304.7,
+					"value": 228.0,
 					"direction": "MAX"
 				},
 				{
 					"classification": "WARNING",
-					"value": 235.45,
+					"value": 176.8,
 					"direction": "MIN"
 				},
 				{
 					"classification": "ALARM",
-					"value": 221.6,
+					"value": 166.4,
 					"direction": "MIN"
 				}
 			],
-			"rra": [{ "live": "RRA:LAST:0.5:1:1800" }],
-			"name": "Vc",
+			"name": "Vca",
 			"_config": {
 				"range": [
 					0,
-					400
+					300
 				],
 				"register": "V1RMS",
 				"threshold": 5,
@@ -46,38 +45,12 @@
 				"units": "Vrms",
 				"scale": 0.23947932
 			},
-			"nominal": 277,
-			"display_range": [136, 400],
-			"id": "s0"
-		},
-		{
-			"thresholds": [
-				{
-					"value": 180,
-					"classification": "ALARM",
-					"direction": "MAX"
-				},
-				{
-					"value": 135,
-					"classification": "WARNING",
-					"direction": "MAX"
-				}
+			"nominal": 208,
+			"display_range": [
+				100,
+				300
 			],
-			"name": "Ic",
-			"_config": {
-				"range": [
-					0,
-					300
-				],
-				"register": "C1RMS",
-				"threshold": 7,
-				"type": "CAC",
-				"units": "Arms",
-				"scale": 0.02037096
-			},
-			"nominal": 90,
-			"display_range": [0, 300],
-			"id": "s1"
+			"id": "s0"
 		}
 	]
 }
