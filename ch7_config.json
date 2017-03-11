@@ -4,7 +4,14 @@
 	"recordAlarms": false,
 	"_config": {
 		"bus_type": "VIRTUAL",
-		"rra": { "live": "RRA:LAST:0.5:1:1800" }
+		"rra": { 
+			"live": [ "RRA:LAST:0.5:1:900" ],
+			"weekly": [
+				"RRA:AVERAGE:0.5:30m:17472",
+				"RRA:MIN:0.5:30m:17472",
+				"RRA:MAX:0.5:30m:17472"
+			]
+		}
 	},
 	"sensors": [
 		{

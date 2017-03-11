@@ -7,7 +7,14 @@
 		"bus_index": 0,
 		"device_type": "STPM3X",
 		"bus_type": "SPI",
-		"rra": { "live": "RRA:LAST:0.5:1:1800" }
+		"rra": { 
+			"live": [ "RRA:LAST:0.5:1:900" ],
+			"weekly": [
+				"RRA:AVERAGE:0.5:30m:17472",
+				"RRA:MIN:0.5:30m:17472",
+				"RRA:MAX:0.5:30m:17472"
+			]
+		}
 	},
 	"sensors": [
 		{
