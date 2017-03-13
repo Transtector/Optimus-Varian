@@ -13,9 +13,8 @@
 			]
 		}
 	},
-	"sensors": [
-		{
-			"id": "s0",			
+	"sensors": {
+		"s0": {
 			"name": " ",
 			"nominal": 0,
 			"thresholds": [
@@ -36,5 +35,5 @@
 				5
 			]
 		}
-	]
+	}
 }

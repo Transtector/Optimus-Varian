@@ -16,8 +16,8 @@
 			]
 		}
 	},
-	"sensors": [
-		{
+	"sensors": {
+		"s0": {
 			"thresholds": [
 				{
 					"classification": "ALARM",
@@ -56,8 +56,7 @@
 			"display_range": [
 				100,
 				300
-			],
-			"id": "s0"
+			]
 		}
-	]
+	}
 }
