@@ -21,22 +21,22 @@
 			"thresholds": [
 				{
 					"classification": "ALARM",
-					"value": 318.55,
+					"value": 290.85,
 					"direction": "MAX"
 				},
 				{
 					"classification": "WARNING",
-					"value": 304.7,
+					"value": 285.3,
 					"direction": "MAX"
 				},
 				{
 					"classification": "WARNING",
-					"value": 235.45,
+					"value": 268.7,
 					"direction": "MIN"
 				},
 				{
 					"classification": "ALARM",
-					"value": 221.6,
+					"value": 263.15,
 					"direction": "MIN"
 				}
 			],

@@ -21,7 +21,7 @@
 			"thresholds": [
 				{
 					"classification": "ALARM",
-					"value": 3,
+					"value": 4,
 					"direction": "MAX"
 				}
 			],
