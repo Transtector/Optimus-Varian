@@ -1,6 +1,6 @@
 {
 	"description": "277 V L-N (Y) Phase A",
-	"name": "LOAD",
+	"name": "Power Conditioner",
 	"recordAlarms": false,
 	"_config": {
 		"device_index": 3,
