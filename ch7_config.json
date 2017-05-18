@@ -1,5 +1,5 @@
 {
-	"name": "Power Conditioner",
+	"name": "LOAD",
 	"description": "Phase Imbalance",
 	"recordAlarms": false,
 	"_config": {

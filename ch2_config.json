@@ -1,9 +1,9 @@
 {
 	"description": "208 V L-L (\u0394) Phase C",
-	"name": "Source/Utility",
+	"name": "LINE",
 	"recordAlarms": false,
 	"_config": {
-		"device_index": 2,
+		"device_index": 1,
 		"bus_index": 0,
 		"device_type": "STPM3X",
 		"bus_type": "SPI",
@@ -46,11 +46,12 @@
 					0,
 					300
 				],
-				"register": "V1RMS",
-				"threshold": 5,
+				"register": "CH3VRMS",
+				"threshold": 20,
 				"type": "VAC",
 				"units": "Vrms",
-				"scale": 0.23947932
+				"scale": 0.177379065,
+				"cal": 0
 			},
 			"nominal": 208,
 			"display_range": [

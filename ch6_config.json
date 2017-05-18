@@ -1,6 +1,6 @@
 {
 	"description": "277 V L-N (Y) Phase C",
-	"name": "Power Conditioner",
+	"name": "LOAD",
 	"recordAlarms": false,
 	"_config": {
 		"device_index": 4,
@@ -46,11 +46,12 @@
 					0,
 					400
 				],
-				"register": "V1RMS",
-				"threshold": 10,
+				"register": "CH6VRMS",
+				"threshold": 20,
 				"type": "VAC",
 				"units": "Vrms",
-				"scale": 0.059105777
+				"scale": 0.059126355,
+				"cal": 0
 			},
 			"nominal": 277,
 			"display_range": [
@@ -77,11 +78,12 @@
 					0,
 					300
 				],
-				"register": "C1RMS",
-				"threshold": 7,
+				"register": "CH6CRMS",
+				"threshold": 10,
 				"type": "CAC",
 				"units": "Arms",
-				"scale": 0.02037096
+				"scale": 0.002037096,
+				"cal": 0
 			},
 			"nominal": 90,
 			"display_range": [
