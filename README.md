@@ -22,8 +22,9 @@ the LINE phase imbalance is calculated from a virtual channel defined
 in `ch7_config.json`.
 
 
-Device Deployment
------------------------
+## Device Deployment
+
+### Option 1: GitLab or GitHub
 
 To get this configuration onto a Cme device that can perform the monitoring,
 simply clone the project repository to the `/data/channels/` directory on the device.
@@ -34,3 +35,17 @@ root@cme[~:501] $ cd /data
 root@cme[/data:502] $ git clone git@10.252.64.224:Cme-config/Optimus-Varian.git
 root@cme[/data:503] $ mv Optimus-Varian channels
 ```
+
+### Option 2: Amazon AWS S3 Bucket
+
+An archive of the latest configuration files is available on AWS.
+
+```bash
+root@cme[~:501] $ cd /data
+root@cme[/data:502] $ mkdir -p channels
+root@cmd[/data:503] $ cd channels
+root@cmd[/data/channels:504] $ curl -s https://s3.amazonaws.com/transtectorpublicdownloads/Cme/cme-varian-config.tgz | tar -xvz
+```
+
+
+
