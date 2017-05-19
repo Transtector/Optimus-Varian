@@ -1,6 +1,6 @@
 {
 	"description": "208 V L-L (\u0394) Phase B",
-	"name": "LINE",
+	"name": "Source/Utility",
 	"recordAlarms": false,
 	"_config": {
 		"device_index": 1,
