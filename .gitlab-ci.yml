@@ -1,12 +1,18 @@
 variables:
   S3_BUCKET_NAME: "transtectorpublicdownloads"
   S3_UPLOAD_FOLDER: "testrel"
+  PACKAGE: "cme-config-varian.tgz"
 
-deploy to production:
-  environment: production
-  image: ruby:latest
-  script:
-  - gem install dpl
-  - dpl --provider=s3 --bucket=$S3_BUCKET_NAME --upload-dir=$S3_UPLOAD_FOLDER
+
+stages:
+  - deploy
+
+publish:
+  stage: deploy
+  image: python:latest
+  script:  
+  - tar -cvzf $PACKAGE ./*.json
+  - pip install awscli
+  - aws s3 cp ./ s3://$S3_BUCKET_NAME/$S3_UPLOAD_FOLDER --exclude "*" --include "*.tgz" 
   only:
   - master
