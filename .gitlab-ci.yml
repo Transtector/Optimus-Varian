@@ -1,0 +1,12 @@
+variables:
+  S3_BUCKET_NAME: "transtectorpublicdownloads"
+  S3_UPLOAD_FOLDER: "testrel"
+
+deploy to production:
+  environment: production
+  image: ruby:latest
+  script:
+  - gem install dpl
+  - dpl --provider=s3 --bucket=$S3_BUCKET_NAME --upload-dir=$S3_UPLOAD_FOLDER
+  only:
+  - master
