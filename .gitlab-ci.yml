@@ -1,6 +1,6 @@
 variables:
   S3_BUCKET_NAME: "transtectorpublicdownloads"
-  S3_UPLOAD_FOLDER: "testrel"
+  S3_UPLOAD_FOLDER: "Cme"
   PACKAGE: "cme-config-varian.tgz"
 
 
