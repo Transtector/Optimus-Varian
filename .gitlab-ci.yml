@@ -13,6 +13,6 @@ publish:
   script:  
   - tar -cvzf $PACKAGE ./*.json
   - pip install awscli
-  - aws s3 cp ./ s3://$S3_BUCKET_NAME/$S3_UPLOAD_FOLDER --exclude "*" --include "*.tgz" 
+  - aws s3 cp $PACKAGE s3://$S3_BUCKET_NAME/$S3_UPLOAD_FOLDER/ 
   only:
   - master
