@@ -33,18 +33,21 @@ simply clone the project repository to the `/data/channels/` directory on the de
 ```bash
 root@cme[~:501] $ cd /data
 root@cme[/data:502] $ git clone git@10.252.64.224:Cme-config/Optimus-Varian.git
-root@cme[/data:503] $ mv Optimus-Varian channels
+root@cme[/data:503] $ mv Optimus-Varian/ channels/
 ```
 
 ### Option 2: Amazon AWS S3 Bucket
 
-An archive of the latest configuration files is available on AWS.
+An archive of the latest configuration files is available on AWS.  Note that you
+may need to create the `/data/channels/` directory first (as shown below), otherwise
+just untar the package into the existing folder over the top of any configuration
+files already in that location.
 
 ```bash
 root@cme[~:501] $ cd /data
 root@cme[/data:502] $ mkdir -p channels
 root@cmd[/data:503] $ cd channels
-root@cmd[/data/channels:504] $ curl -s https://s3.amazonaws.com/transtectorpublicdownloads/Cme/cme-varian-config.tgz | tar -xvz
+root@cmd[/data/channels:504] $ curl -s https://s3.amazonaws.com/transtectorpublicdownloads/Cme/cme-config-varian.tgz | tar -xvz
 ```
 
 
