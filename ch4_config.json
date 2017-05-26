@@ -62,7 +62,7 @@
 		"s1": {
 			"thresholds": [
 				{
-					"value": 145,
+					"value": 135,
 					"classification": "ALARM",
 					"direction": "MAX"
 				},
