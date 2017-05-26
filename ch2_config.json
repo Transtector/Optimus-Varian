@@ -1,6 +1,6 @@
 {
 	"description": "208 V L-L (\u0394) Phase C",
-	"name": "Source/Utility",
+	"name": "Service/Utility",
 	"recordAlarms": false,
 	"_config": {
 		"device_index": 1,
@@ -21,22 +21,22 @@
 			"thresholds": [
 				{
 					"classification": "ALARM",
-					"value": 239.2,
+					"value": 228.8,
 					"direction": "MAX"
 				},
 				{
 					"classification": "WARNING",
-					"value": 228.0,
+					"value": 218.4,
 					"direction": "MAX"
 				},
 				{
 					"classification": "WARNING",
-					"value": 176.8,
+					"value": 197.6,
 					"direction": "MIN"
 				},
 				{
 					"classification": "ALARM",
-					"value": 166.4,
+					"value": 176.8,
 					"direction": "MIN"
 				}
 			],
